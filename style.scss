@@ -41,6 +41,10 @@ header {
 							text-decoration: none;
 							opacity: 50%;
 							padding: 0 1rem;
+							transition: ease 0.3s;
+						}
+						a:hover {
+							color: hsl(199, 100%, 40%);
 						}
 					}
 				}
@@ -56,16 +60,29 @@ header {
 					font-family: "Montserrat", sans-serif;
 					font-weight: 500;
 					font-size: 16px;
-					border: none;
+					border: 1px solid #171717;
+					border-radius: 0.5rem;
 					background-color: inherit;
 					padding: 0.5rem 1rem;
 					margin: 0 1rem;
 					cursor: pointer;
+					transition: ease 0.3s;
+				}
+				button:hover {
+					background-color: #171717;
+					color: #fff;
 				}
 				.black-button {
+					border: 1px solid #8effe5;
 					color: #fff;
-					background-color: #171717;
+					background: linear-gradient(to right, #8effe5, #76d3bd);
 					border-radius: 0.5rem;
+					transition: ease 0.3s;
+				}
+				.black-button:hover {
+					background: #fff;
+					color: #8effe5;
+					border: 1px solid #8effe5;
 				}
 			}
 		}
