@@ -7,7 +7,8 @@
 
 body {
   color: #001a26;
-  background-color: #fefefe;
+  background: -webkit-gradient(linear, left top, right top, from(#fff3d6), to(white));
+  background: linear-gradient(to right, #fff3d6, white);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -183,10 +184,16 @@ main .content .buttons-holder div .select {
   padding: 1rem 1rem;
   width: 12rem;
   cursor: pointer;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
 }
 
 main .content .buttons-holder div .select h1 {
   font-size: 16px;
+}
+
+main .content .buttons-holder div .select:hover {
+  background-color: #4a4a4a;
 }
 
 main .content .buttons-holder div {
@@ -209,6 +216,12 @@ main .content .buttons-holder div button {
   padding: 1.13rem;
   margin-left: 1rem;
   cursor: pointer;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+main .content .buttons-holder div button:hover {
+  background-color: #4a4a4a;
 }
 
 @media (max-width: 768px) {
@@ -225,7 +238,11 @@ main .content .buttons-holder div button {
     display: none;
   }
   main img {
+    top: 100px;
     width: 38%;
+  }
+  main .illustration-right {
+    top: 270px;
   }
   main .content .title h1 {
     font-size: 2rem;
