@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #001a26;
+  background-color: #fefefe;
+  font-family: "Montserrat", sans-serif;
+}
+
+header .navbar {
+  padding-top: 5rem;
+  margin: 0 8%;
+}
+
+header .navbar div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .navbar div .nav-title img {
+  width: 26px;
+  height: 32px;
+}
+
+header .navbar div .nav-title h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 18px;
+}
+
+header .navbar div .nav-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .navbar div .nav-links ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+header .navbar div .nav-links ul li a {
+  color: #001a26;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  opacity: 50%;
+  padding: 0 1rem;
+}
+
+header .navbar div .nav-number h1 {
+  font-size: 16px;
+  color: #001a26;
+}
+
+header .navbar div .nav-cta button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  background-color: inherit;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+header .navbar div .nav-cta .black-button {
+  color: #fff;
+  background-color: #171717;
+  border-radius: 0.5rem;
+}
+
+main {
+  margin-top: 130px;
+}
+
+main .illustration-left {
+  left: 0;
+}
+
+main .illustration-right {
+  right: 0;
+}
+
+main img {
+  top: 240px;
+  width: 30%;
+  position: absolute;
+}
+
+main .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .content .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .content .title h1 {
+  line-height: 120%;
+  text-align: center;
+  font-family: "Neucha", cursive;
+  font-size: 4.5rem;
+  font-weight: 500;
+  width: 50%;
+  color: #000;
+}
+
+main .content .description {
+  padding-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .content .description p {
+  text-align: center;
+  width: 40%;
+  font-size: 1.2rem;
+  opacity: 50%;
+}
+
+main .content .buttons-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
+
+main .content .buttons-holder div .select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #171717;
+  color: #fff;
+  padding: 1rem 1rem;
+  width: 12rem;
+  cursor: pointer;
+}
+
+main .content .buttons-holder div .select h1 {
+  font-size: 16px;
+}
+
+main .content .buttons-holder div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .content .buttons-holder div button {
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #171717;
+  padding: 1.13rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header .navbar {
+    padding-top: 1rem;
+  }
+  header .navbar div .nav-title {
+    margin: 0 auto;
+  }
+  header .navbar div .nav-title h1 {
+    font-size: 40px;
+  }
+  header .navbar div .display-none {
+    display: none;
+  }
+  main img {
+    width: 38%;
+  }
+  main .content .title h1 {
+    font-size: 2rem;
+    z-index: 1;
+  }
+  main .content .description {
+    padding-top: 2rem;
+  }
+  main .content .description p {
+    z-index: 1;
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header .navbar {
+    padding-top: 1rem;
+    margin: 0 3%;
+  }
+  header .navbar .nav-number {
+    display: none;
+  }
+  header .navbar div {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px 0;
+  }
+  header .navbar div .nav-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .content .title h1 {
+    font-family: "Neucha", cursive;
+    font-size: 2.8rem;
+    width: 50%;
+    z-index: 1;
+  }
+  main .content .description p {
+    font-size: 0.9rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
