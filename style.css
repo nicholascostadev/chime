@@ -57,6 +57,12 @@ header .navbar div .nav-links ul li a {
   text-decoration: none;
   opacity: 50%;
   padding: 0 1rem;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+header .navbar div .nav-links ul li a:hover {
+  color: #008bcc;
 }
 
 header .navbar div .nav-number h1 {
@@ -68,17 +74,35 @@ header .navbar div .nav-cta button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  border: none;
+  border: 1px solid #171717;
+  border-radius: 0.5rem;
   background-color: inherit;
   padding: 0.5rem 1rem;
   margin: 0 1rem;
   cursor: pointer;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+header .navbar div .nav-cta button:hover {
+  background-color: #171717;
+  color: #fff;
 }
 
 header .navbar div .nav-cta .black-button {
+  border: 1px solid #8effe5;
   color: #fff;
-  background-color: #171717;
+  background: -webkit-gradient(linear, left top, right top, from(#8effe5), to(#76d3bd));
+  background: linear-gradient(to right, #8effe5, #76d3bd);
   border-radius: 0.5rem;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+header .navbar div .nav-cta .black-button:hover {
+  background: #fff;
+  color: #8effe5;
+  border: 1px solid #8effe5;
 }
 
 main {
